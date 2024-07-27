@@ -10,6 +10,9 @@ import TVShowList from "./components/TVShowList/TVShowList";
 import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
+
+  console.log('API Key:', process.env.REACT_APP_API_KEY_PARAM);
+
   const [currentTVShow, setCurrentTVShow] = useState();
   const [recommendationList, SetRecommendationList] = useState([]);
 
